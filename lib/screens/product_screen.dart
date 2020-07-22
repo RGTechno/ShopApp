@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:shop_app/widgets/product_item.dart';
+import '../widgets/product_item.dart';
 import '../models/products.dart';
 
 class ProductsScreen extends StatelessWidget {
@@ -42,7 +42,7 @@ class ProductsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("MYSHOP"),
+        title: Text("MYSHOP",style: Theme.of(context).textTheme.headline6,),
       ),
       body: GridView.builder(
         padding: EdgeInsets.all(15),
